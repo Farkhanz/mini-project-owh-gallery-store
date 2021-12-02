@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/skins/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/skins/vendor/jquery/jquery.js"></script>
+    <script src="assets/skins/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Icons bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- Custom fonts for this template -->
+    <link href="assets/skins/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Skins CSS -->
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="shortcut icon" href="assets/img/icon.jpg" type="image/jpg">
+
+    <title id="uptitle">Owh Online Store</title>
+    <script src="ext.js"></script>
+</head>
+
+<body>
+    <!-- Bagian Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navMain">
+        <div class="container">
+            <a class="navbar-brand" href="#">Owh Store</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="menuFunc() ">Click me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Bagian Navigasi -->
+
+    <!-- Bagian Header -->
+    <header class="upperspot " style="background-image: url( 'owh-icons.png') ">
+        <div class="overlay "></div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-8 col-md-10 mx-auto ">
+                    <div class="site-heading ">
+                        <h1>Owh Gallery Store</h1>
+                        <span class="subheading ">Happy Shopping!</span>
+                        <button class="btn " onclick="mainFunc() " style="background: transparent; margin-top: 1em; color: white; ">Welcome. Please click here. .</button>
+                        <!-- <script>
+                            function mainFunc() {
+                                var x = document.getElementsByClassName("subheading ");
+                                x[0].innerHTML = "All the inspiration is here! ";
+                            }
+                        </script> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Bagian Header -->
+
+    <div class="container ">
+        <div class="alert alert-success " role="alert ">
+            New Arrival on October 2021, check it out!
+        </div>
+    </div>
+
+    <!-- Section-->
+    <section class="py-4 ">
+        <div class="container px-4 px-lg-5 mt-5 ">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center ">
+                <!-- Product 1 -->
+                <div class="col mb-5 ">
+                    <div class="card h-100 ">
+                        <!-- Logo Sale -->
+                        <div class="badge bg-dark text-white position-absolute " style="top: 0.5rem; right: 0.5rem ">Hot Sale!</div>
+                        <!-- Gambar Produk -->
+                        <img class="card-img-top " src="assets/img/Chizuru.jpg " alt="chizuru " />
+                        <!-- Detail Produk -->
+                        <div class="card-body p-4 ">
+                            <div class="text-center ">
+                                <!-- Nama Produk -->
+                                <h5 class="fw-bolder ">Unlock it - Project Files for After Effects</h5>
+                                <!-- Harga Produk -->
+                                $ 5.00
+                            </div>
+                        </div>
+                        <!-- Button aksi produk -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent ">
+                            <div class="text-center ">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    See details
+  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav aria-label="breadcrumb ">
+                                                    <ol class="breadcrumb ">
+                                                        <li class="breadcrumb-item "><a href="# " class="linked ">Home</a></li>
+                                                        <li class="breadcrumb-item active " aria-current="page ">Details Product</li>
+                                                    </ol>
+                                                </nav>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-left "><strong>Unlock it - Project Files for After Effects</strong></h5>
+                                                <h6 class="text-left text-muted bi-person-fill ">Made by : Shoko</h6>
+                                                <h6 class="text-left text-muted bi-currency-dollar "> Price $5</h6>
+                                                <iframe class="embed-responsive-item " src="assets/vid/chizuru.mp4 " width="460 " height="315 " allowfullscreen></iframe>
+                                                <blockquote class="blockquote text-justify ">
+                                                    <p>Adobe After Effects CC 2015++. You need this plugins to run this projects.</p>
+                                                    <li style="margin-left: 1em;">shappire</li>
+                                                    <li style="margin-left: 1em;">trapcode</li>
+                                                    <li style="margin-left: 1em;">magic bullets looks</li>
+                                                </blockquote>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal preview -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col mb-5 ">
+                    <div class="card h-100 ">
+                        <!-- Logo Sale -->
+                        <!-- <div class="badge bg-dark text-white position-absolute " style="top: 0.5rem; right: 0.5rem ">Hot Sale!</div> -->
+                        <!-- Gambar Produk -->
+                        <img class="card-img-top " src="assets/img/shoujo.jpg " alt="shoujo " />
+                        <!-- Detail Produk -->
+                        <div class="card-body p-4 ">
+                            <div class="text-center ">
+                                <!-- Nama Produk -->
+                                <h5 class="fw-bolder ">Blink blink Alight Motion - Android edits</h5>
+                                <!-- Rating produk -->
+                                <div class="d-flex justify-content-center small text-warning mb-2 ">
+                                    <!-- <div class="stars ">
+                                        <img src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/abeeb1e0.svg " alt="bi-star-fill "> </div>
+                                    <div class="stars "><img src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/abeeb1e0.svg " alt="bi-star-fill "></div>
+                                    <div class="stars "><img src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/abeeb1e0.svg " alt="bi-star-fill "></div>
+                                    <div class="stars "><img src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/abeeb1e0.svg " alt="bi-star-fill "></div>
+                                    <div class="stars "><img src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/abeeb1e0.svg " alt="bi-star-fill "></div> -->
+                                </div>
+                                <!-- Harga Produk -->
+                                <span class="text-muted text-decoration-line-through ">$ 7.99</span> $ 3.00
+                            </div>
+                        </div>
+                        <!-- Button aksi produk -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent ">
+                            <div class="text-center ">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontent2">
+    See details
+  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalcontent2" tabindex="-1" data-bs-target="#modalcontent2" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav aria-label="breadcrumb ">
+                                                    <ol class="breadcrumb ">
+                                                        <li class="breadcrumb-item "><a href="# " class="linked ">Home</a></li>
+                                                        <li class="breadcrumb-item active " aria-current="page ">Details Product</li>
+                                                    </ol>
+                                                </nav>
+                                                <button type="button " class="btn btn-outline-dark mt-auto " data-bs-dismiss="modal " aria-label="Close ">Close</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-left "><strong>Blink blink Alight Motion - Android edits</strong></h5>
+                                                <h6 class="text-left text-muted bi-person-fill "> Made by : chunky</h6>
+                                                <h6 class="text-left text-muted bi-currency-dollar "> Price $2</h6>
+                                                <iframe class="embed-responsive-item " src="assets/vid/bling v2.mp4" width="460 " height="315 " allowfullscreen></iframe>
+                                                <blockquote class="blockquote text-justify ">
+                                                    <p>You needed this spesification to use this project.</p>
+                                                    <li style="margin-left: 1em;">Alight Motion ver.3.0.5</li>
+                                                    <li style="margin-left: 1em;">Android version 10</li>
+                                                </blockquote>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal preview -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col mb-5 ">
+                    <div class="card h-100 ">
+                        <!-- Logo Sale -->
+                        <!-- <div class="badge bg-dark text-white position-absolute " style="top: 0.5rem; right: 0.5rem ">Hot Sale!</div> -->
+                        <!-- Gambar Produk -->
+                        <img class="card-img-top " src="assets/img/kaguya.JPG " alt="kaguya " />
+                        <!-- Detail Produk -->
+                        <div class="card-body p-4 ">
+                            <div class="text-center ">
+                                <!-- Nama Produk -->
+                                <h5 class="fw-bolder ">Comfort me</h5>
+                                <!-- Harga Produk -->
+                                <span class="text-muted text-decoration-line-through "></span> $ 4.00
+                            </div>
+                        </div>
+                        <!-- Button aksi produk -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent ">
+                            <div class="text-center ">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontent3">
+    See details
+  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalcontent3" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-target="#modalcontent3" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav aria-label="breadcrumb ">
+                                                    <ol class="breadcrumb ">
+                                                        <li class="breadcrumb-item "><a href="# " class="linked ">Home</a></li>
+                                                        <li class="breadcrumb-item active " aria-current="page ">Details Product</li>
+                                                    </ol>
+                                                </nav>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-left "><strong>Comfort me</strong></h5>
+                                                <h6 class="text-left text-muted bi-person-fill "> Made by : Mio</h6>
+                                                <h6 class="text-left text-muted bi-currency-dollar "> Price $5</h6>
+                                                <iframe class="embed-responsive-item " src="assets/vid/kaguya.mp4 " width="460 " height="315 " allowfullscreen></iframe>
+                                                <blockquote class="blockquote text-justify ">
+                                                    <p>Adobe After Effects CC 2015++. You need this plugins to run this projects.</p>
+                                                    <li style="margin-left: 1em;">shappire</li>
+                                                    <li style="margin-left: 1em;">trapcode</li>
+                                                    <li style="margin-left: 1em;">magic bullets looks</li>
+                                                </blockquote>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal preview -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col mb-5 ">
+                    <div class="card h-100 ">
+                        <!-- Logo Sale -->
+                        <!-- <div class="badge bg-dark text-white position-absolute " style="top: 0.5rem; right: 0.5rem ">Hot Sale!</div> -->
+                        <!-- Gambar Produk -->
+                        <img class="card-img-top " src="assets/img/water-sea-ocean-travel.jpg " alt="senter-swat-mini " />
+                        <!-- Detail Produk -->
+                        <div class="card-body p-4 ">
+                            <div class="text-center ">
+                                <!-- Nama Produk -->
+                                <h5 class="fw-bolder ">Water sea outdoor travel - Photoshop manipulation</h5>
+                                <!-- Harga Produk -->
+                                $ 5.00
+                            </div>
+                        </div>
+                        <!-- Button aksi produk -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent ">
+                            <div class="text-center ">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontent4">
+    See details
+  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalcontent4" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-target="#modalcontent4" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav aria-label="breadcrumb ">
+                                                    <ol class="breadcrumb ">
+                                                        <li class="breadcrumb-item "><a href="# " class="linked ">Home</a></li>
+                                                        <li class="breadcrumb-item active " aria-current="page ">Details Product</li>
+                                                    </ol>
+                                                </nav>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-left "><strong>Water sea outdoor travel - Photoshop manipulation</strong></h5>
+                                                <h6 class="text-left text-muted bi-person-fill "> Made by : Adam Smith</h6>
+                                                <h6 class="text-left text-muted bi-currency-dollar "> Price $5</h6>
+                                                <!-- <iframe class="embed-responsive-item " src="assets/vid/kaguya.mp4 " width="460 " height="315 " allowfullscreen></iframe> -->
+                                                <img src="assets/img/water-sea-ocean-travel.jpg " alt="water sea ocean travel " width="460 " height="315 ">
+                                                <blockquote class="blockquote text-justify ">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam necessitatibus, perspiciatis sint accusamus non magni! Fuga odio tempore voluptatum officia omnis culpa, provident ut
+                                                        reprehenderit. Eveniet, nihil nobis. Fugiat.</p>
+                                                </blockquote>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal preview -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col mb-5 ">
+                    <div class="card h-100 ">
+                        <!-- Logo Sale -->
+                        <!-- <div class="badge bg-dark text-white position-absolute " style="top: 0.5rem; right: 0.5rem ">Hot Sale!</div> -->
+                        <!-- Gambar Produk -->
+                        <img class="card-img-top " src="assets/img/Photo Manipulation by Rory MacLeod.jpg" alt="Rory MacLeod " />
+                        <!-- Detail Produk -->
+                        <div class="card-body p-4 ">
+                            <div class="text-center ">
+                                <!-- Nama Produk -->
+                                <h5 class="fw-bolder ">Under the sea - Photoshop CC 2017</h5>
+                                <!-- Harga Produk -->
+                                $ 5.00
+                            </div>
+                        </div>
+                        <!-- Button aksi produk -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent ">
+                            <div class="text-center ">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontent5">
+    See details
+  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalcontent5" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-target="#modalcontent5" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav aria-label="breadcrumb ">
+                                                    <ol class="breadcrumb ">
+                                                        <li class="breadcrumb-item "><a href="# " class="linked ">Home</a></li>
+                                                        <li class="breadcrumb-item active " aria-current="page ">Details Product</li>
+                                                    </ol>
+                                                </nav>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-left "><strong>Under the sea - Photoshop CC 2017</strong></h5>
+                                                <h6 class="text-left text-muted bi-person-fill ">Made by : Rory Macleod</h6>
+                                                <h6 class="text-left text-muted bi-currency-dollar "> Price $5</h6>
+                                                <img src="assets/img/Photo Manipulation by Rory MacLeod.jpg" alt="under the sea rory " width="460 " height="315 ">
+                                                <blockquote class="blockquote text-justify ">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam necessitatibus, perspiciatis sint accusamus non magni! Fuga odio tempore voluptatum officia omnis culpa, provident ut
+                                                        reprehenderit. Eveniet, nihil nobis. Fugiat.</p>
+                                                </blockquote>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal preview -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col mb-5 ">
+                    <div class="card h-100 ">
+                        <!-- Logo Sale -->
+                        <div class="badge bg-dark text-white position-absolute " style="top: 0.5rem; right: 0.5rem ">Hot Sale!</div>
+                        <!-- Gambar Produk -->
+                        <img class="card-img-top " src="assets/img/best-illustrator.jpg" alt="Illustrator " />
+                        <!-- Detail Produk -->
+                        <div class="card-body p-4 ">
+                            <div class="text-center ">
+                                <!-- Nama Produk -->
+                                <h5 class="fw-bolder ">Illustrator people</h5>
+                                <!-- Harga Produk -->
+                                $ 5.00
+                            </div>
+                        </div>
+                        <!-- Button aksi produk -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent ">
+                            <div class="text-center ">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontent6">
+    See details
+  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalcontent6" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-target="#modalcontent6" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav aria-label="breadcrumb ">
+                                                    <ol class="breadcrumb ">
+                                                        <li class="breadcrumb-item "><a href="# " class="linked ">Home</a></li>
+                                                        <li class="breadcrumb-item active " aria-current="page ">Details Product</li>
+                                                    </ol>
+                                                </nav>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-left "><strong>Illustrator people</strong></h5>
+                                                <h6 class="text-left text-muted bi-person-fill ">Made by : Rory Macleod</h6>
+                                                <h6 class="text-left text-muted bi-currency-dollar "> Price $5</h6>
+                                                <img src="assets/img/best-illustrator.jpg" alt="Illustrator " width="460 " height="315 ">
+                                                <blockquote class="blockquote text-justify ">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam necessitatibus, perspiciatis sint accusamus non magni! Fuga odio tempore voluptatum officia omnis culpa, provident ut
+                                                        reprehenderit. Eveniet, nihil nobis. Fugiat.</p>
+                                                </blockquote>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal preview -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="col mb-5 ">
+                    <div class="card h-100 ">
+                        <!-- Logo Sale -->
+                        <div class="badge bg-dark text-white position-absolute " style="top: 0.5rem; right: 0.5rem ">Hot Sale!</div>
+                        <!-- Gambar Produk -->
+                        <img class="card-img-top " src="assets/img/Man-With-Smoke-Over-The-Sea.jpg" alt="shut-up " />
+                        <!-- Detail Produk -->
+                        <div class="card-body p-4 ">
+                            <div class="text-center ">
+                                <!-- Nama Produk -->
+                                <h5 class="fw-bolder ">Man with smoke over the sea - Adobe Illustrator</h5>
+                                <!-- Harga Produk -->
+                                $ 5.00
+                            </div>
+                        </div>
+                        <!-- Button aksi produk -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent ">
+                            <div class="text-center ">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontent7">
+   See details
+  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalcontent7" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-target="#modalcontent7" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav aria-label="breadcrumb ">
+                                                    <ol class="breadcrumb ">
+                                                        <li class="breadcrumb-item "><a href="# " class="linked ">Home</a></li>
+                                                        <li class="breadcrumb-item active " aria-current="page ">Details Product</li>
+                                                    </ol>
+                                                </nav>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-left "><strong>Man with smoke over sea</strong></h5>
+                                                <h6 class="text-left text-muted bi-person-fill "> Made by : Mio</h6>
+                                                <h6 class="text-left text-muted bi-currency-dollar "> Price $5</h6>
+                                                <img src="assets/img/Man-With-Smoke-Over-The-Sea.jpg" alt="overlay " width="460 " height="315 ">
+                                                <blockquote class="blockquote text-justify ">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam necessitatibus, perspiciatis sint accusamus non magni! Fuga odio tempore voluptatum officia omnis culpa, provident ut
+                                                        reprehenderit. Eveniet, nihil nobis. Fugiat.</p>
+                                                </blockquote>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal preview -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <div class="container ">
+            <div class="footer">
+                <h1 class="down-text-footer ">Hi! Give me your opinion about me</h1>
+                <div class="mt-4 mb-3 ">
+                    <label class="form-label " for="exampleFormControlInput1 ">Your name</label>
+                    <input type="name " class="form-control " id="exampleFormControlInput1 " placeholder="Mavis.eu ">
+                </div>
+                <div class="mb-3 ">
+                    <label for="exampleFormControlTextarea1 " class="form-label ">Feedback</label>
+                    <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 " placeholder="your Website is Goddamn COOL Bro, keep it up! "></textarea>
+                </div>
+                <button class="btn btn-primary " type="submit " onclick=" ">Send it!</button>
+            </div>
+            <div class="text-center text-white foot d-flex align-items-center justify-content-center ">
+                Simple study and try to make colorfull style - Farkhanz 2021
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
